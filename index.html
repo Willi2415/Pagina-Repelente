@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repelente Casero Natural</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #af4c86;
+        }
+        
+        header {
+            background-color: #af4c86;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .product-image {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #af4c86;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        <li><a href="productos.html">Nuestros Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<header id="inicio">
+    <h1>Repelente Casero Natural</h1>
+    <p>Protección natural y segura para ti y tu familia</p>
+</header>
+
+<div class="container">
+    <img src="repelente.jpg" alt="Botella de Repelente Casero" class="product-image">
+    
+    <h2>Descripción del Producto</h2>
+    <p>Este repelente casero está elaborado con ingredientes 100% naturales que ahuyentan insectos sin dañar el medio ambiente ni tu piel. Ideal para personas con piel sensible y seguro para usar en niños y mascotas.</p>
+    
+    <h2>Beneficios</h2>
+    <ul>
+        <li>Ingredientes naturales y ecológicos</li>
+        <li>Seguro para toda la familia</li>
+        <li>Aroma agradable y sin químicos agresivos</li>
+        <li>Fácil de aplicar y de larga duración</li>
+    </ul>
+
+    <a href="#comprar" class="button">Comprar Ahora - $9.99</a>
+
+    <h2>Cómo Comprar</h2>
+    <p>Para realizar tu pedido, completa el formulario a continuación y nuestro equipo te contactará para confirmar el envío.</p>
+    
+    <form id="comprar" action="submit_form.php" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="direccion">Dirección de Envío:</label><br>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <input type="submit" value="Realizar Pedido" class="button">
+    </form>
+</div>
+
+<footer>
+    <p>© 2024 Repelente Casero Natural. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
